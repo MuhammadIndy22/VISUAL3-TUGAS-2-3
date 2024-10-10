@@ -1,0 +1,21 @@
+import PySimpleGUI as sg
+
+sg.theme("DarkGreen4")  # penentuan tema
+
+# Membuat jendela
+window = sg.Window(
+    title="Profile",
+    layout=[
+        [sg.Text("TEKNOLOGI INFORMASI", size=(25, 1), justification="center")],
+        [sg.Text("TENOLOGI INFORMASI ", size=(25, 1), justification="left")],
+        [sg.Text("TERNOLOGI INFORMASI", size=(25, 1), justification="right")],
+        [sg.Text(("TEKNOLOGI INFORMASI " + " ") * 2, size=(25, 2), justification="center")],
+        [sg.Text("UNISKA MAB BANJARMASIN", text_color="#FFCC00")],
+    ],
+    size=(400, 250),
+    font=("Times", 18)
+)
+
+# Membaca dan menampilkan jendela
+window.read()
+window.close()
